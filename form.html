@@ -18,17 +18,42 @@
         <![endif]-->
     </head>
 
-    <body>
-        <h1 class="text-center">Hello World</h1>
+    <h1 class="text-center">Hello World</h1>
 
-        <!-- jQuery -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <!-- Bootstrap JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.js"></script>
+    <script type="text/javascript" src="http://jzaefferer.github.com/jquery-validation/jquery.validate.js"></script>
+    <script type="text/javascript"></script>
+    <h1>
+        FORMulario guay de oprueba con jquery
+    </h1>
+    <h2> subtitulo 37
+    </h2>
+    <i> clasde
+        </i>
+    <form action="post" id="formulario">
+        <h4> Nombre
+        </h4>
+        <input type="text" id="nombre" class="required" />
 
-        <h1>FORMulario guay de oprueba con jquery</h1>
-        <h2>subtitulo 37</h2>
-        <i> clasde</i>
+        <h4> Edad
+        </h4>
+        <input type="text" id="edad" class="required number">
+
+        <h4> situacion
+        </h4>
+        <select name="situacionLaboral" id="sLaboral">
+         <option value="Currando"> </option>
+        <option value="ERTE"></option>
+       <option value="EnParo"> </option>
+    </select>
+        <input type="text" id="sueldo" class="required">
+        <input type="submit" id="enviar" />
+
+    </form>
     </body>
 
     </html>
