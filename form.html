@@ -1,59 +1,118 @@
-< <!DOCTYPE html>
-    <html lang="es">
+<!DOCTYPE html>
+<html lang="es">
 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Title Page</title>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title Page</title>
 
-        <!-- Bootstrap CSS -->
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
-    </head>
+</head>
 
-    <h1 class="text-center">Hello World</h1>
+<h1 class="text-center">Hello World</h1>
+<link rel="stylesheet" type="text/css" href="css/form.css">
 
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Bootstrap JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.js"></script>
-    <script type="text/javascript" src="http://jzaefferer.github.com/jquery-validation/jquery.validate.js"></script>
-    <script type="text/javascript"></script>
-    <h1>
-        FORMulario guay de oprueba con jquery
-    </h1>
-    <h2> subtitulo 37
-    </h2>
-    <i> clasde
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Bootstrap JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src=" https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+<script type="text/javascript" src="js/form.js">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.2/xlsx.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/TableExport/5.2.0/js/tableexport.min.js"></script>
+<script src="https://cdn.rawgit.com/rainabba/jquery-table2excel/1.1.0/dist/jquery.table2excel.min.js"></script>
+<script src="jQuery-TableToExcel-master/jquery.tableToExcel.js"></script>
+<script src="https://rawgit.com/unconditional/jquery-table2excel/master/src/jquery.table2excel.js"></script>
+<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<h1>
+    FORMulario guay de oprueba con jquery
+</h1>
+<h2> subtitulo 37
+</h2>
+<i> clasde
         </i>
-    <form action="post" id="formulario">
-        <h4> Nombre
-        </h4>
-        <input type="text" id="nombre" class="required" />
+<form method="post" id="formulario">
+    <h4> Nombre
+    </h4>
+    <input type="text" id="nombre" name="nombre" />
 
-        <h4> Edad
-        </h4>
-        <input type="text" id="edad" class="required number">
+    <h4> Edad
+    </h4>
+    <input type="text" id="edad" name="edad">
 
-        <h4> situacion
-        </h4>
-        <select name="situacionLaboral" id="sLaboral">
-         <option value="Currando"> </option>
-        <option value="ERTE"></option>
-       <option value="EnParo"> </option>
-    </select>
-        <input type="text" id="sueldo" class="required">
-        <input type="submit" id="enviar" />
+    <h4> situacion
+    </h4>
+    <select name="situacionLaboral" id="sLaboral" name="sLaboral">
+            <option value=" ">
+                </option>
+                    <option value="Currando"> Currando
+                        </option>
+                            <option value="ERTE"> ERTE
+                                </option>
+                                    <option value="EnParo"> EnParo
+                                        </option>
+                                            </select>
+    <h4> Sueldo
+    </h4>
+    <input type="text" id="sueldo" name="sueldo ">
+    <h5>datepicker</h5>
+    <div id="datepicker">
+    </div>
+    <input type="submit" id="enviar" />
 
-    </form>
-    </body>
+</form>
 
-    </html>
+<table id="resultados">
+    <tr>
+        <td>
+            Tu nombre es
+            <p id="name">
+            </p>
+
+        </td>
+        <td>
+            Edad:
+            <p id="age">
+            </p>
+        </td>
+        <td>
+            Situación laboral
+            <p id="situacion">
+            </p>
+        </td>
+        <td>
+            sueldo:
+            <P id="salario">
+            </P>
+        </td>
+        <td>
+            fecha nacimiento:
+            <p id="fnacimiento"></p>
+        </td>
+        <td>
+            Edad Real:
+            <input id="calculatedage" type="text" readonly>
+
+            </input>
+
+        </td>
+    </tr>
+    <b id="mensaje"></b>
+</table>
+<input type="button" value="convertir a pdf" id="toPDF ">
+<input type="button" id="toexcel" value="convertir a excel ">
+
+</html>

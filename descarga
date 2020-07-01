@@ -1,0 +1,22 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns="http://www.w3.org/TR/REC-html40"><head><!--[if gte mso 9]><xml><x:ExcelWorkbook><x:ExcelWorksheets><x:ExcelWorksheet><x:Name>W3C Example Table</x:Name><x:WorksheetOptions><x:DisplayGridlines/></x:WorksheetOptions></x:ExcelWorksheet></x:ExcelWorksheets></x:ExcelWorkbook></xml><![endif]--></head><body><table>
+    <tbody><tr>
+        <td>
+            Tu nombre es
+            <p id="name">David</p>
+
+        </td>
+        <td>
+            Edad:
+            <p id="age">8</p>
+        </td>
+        <td>
+            Situación laboral
+            <p id="situacion">EnParo</p>
+        </td>
+        <td>
+            sueldo:
+            <p id="salario">8888888888888</p>
+        </td>
+    </tr>
+
+</tbody></table></body></html>
